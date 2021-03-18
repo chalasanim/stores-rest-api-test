@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                python3 -m unittest *test*
+                 sh "python -m unittest *test*"
             }
         }
         stage('Deploy') {
