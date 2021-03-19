@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                 bat "pytest \tests"
+                 bat "pytest *"
             }
         }
         stage('Deploy') {
