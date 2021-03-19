@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                 bat "python -m pytest --verbose --junit-xml reports/unit_tests.xml"
+                 bat "python -m pytest"
             }
         }
         stage('Deploy') {
